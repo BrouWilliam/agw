@@ -254,7 +254,7 @@ header .header .content a{
     border: none;
 }
 section.quem-somos{
-    margin: 10rem 0;
+    padding: 10rem 0;
 }
 section.quem-somos h2{
     font-size: 16px;
@@ -277,6 +277,7 @@ section.banner{
   background-image: url(../assets/background-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 section.banner .container .col-md-8{
   margin: 0 auto;
@@ -353,7 +354,7 @@ section.servicos p{
   font-size: 1em;
 }
 section.portfolio{
-  margin: 5rem 0;
+  padding: 5rem 0;
 }
 section.portfolio h2{
     text-transform: uppercase;
@@ -389,7 +390,13 @@ section.contato form button{
     padding: 4px 20px;
 }
 section.contato span{
-
+  font-weight: 500;
+}
+section.contato a{
+  color: var(--secondary-color)
+}
+section.contato a:hover{
+  color: #585858;
 }
 form button:hover{
     background: #ccc340;
@@ -399,6 +406,22 @@ footer{
 }
 footer img{
     max-height: 150px;
+}
+footer ul li a{
+  color: var(--secondary-color);
+}
+footer ul li a:hover{
+  color: #585858;
+}
+footer ul.d-flex li a{
+  width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul.d-flex li a i{
+  font-size: 25px;
 }
 
 
@@ -494,7 +517,7 @@ footer img{
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background: var(--primary-color); 
+    background: #feef00f2;
     visibility: hidden; 
     opacity: 0; 
     -webkit-transition: .3s all ease; 
@@ -535,7 +558,7 @@ footer img{
 .post .post-hover .project-hover-inner h2, 
 .post .post-hover .post-hover-inner h2 { 
     color: #000; 
-    font-size: 26px; 
+    font-size: 30px; 
     line-height: 1.2; 
     -webkit-transition: .3s all ease; 
     -o-transition: .3s all ease; 
@@ -544,6 +567,7 @@ footer img{
     visibility: hidden; 
     position: relative; 
     bottom: -30px; 
+    text-transform: none;
 }
 
 .project .project-hover .project-hover-inner span, 
